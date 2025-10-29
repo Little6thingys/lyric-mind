@@ -43,16 +43,23 @@ export default function HomePage() {
   };
 
   return (
-    <div style={{ padding: 20 }}>
-      <h1>LyricMind</h1>
-      <button onClick={handleNewScore}>New Score</button>
-      <input type="file" accept=".musicxml" onChange={handleFileUpload} />
-      {fileName && (
-        <>
-          <p>Selected File: {fileName}</p>
-          <button onClick={goToEditor}>Open Editor</button>
-        </>
-      )}
+    <div className="h-screen flex flex-col items-center justify-center p-4 space-y-4 text-center" style={{ backgroundColor: "#394BF3", paddingTop: -100 }}>
+      <img src="/Auttaja_Icon.png" style={{width: 700, marginTop: -100}}></img>
+      <img src="/auttaja_word_logo.png" style={{width: 400, zIndex: 5, marginTop: -125}}></img>
+      <h1 style={{zIndex: 5, marginTop: -35, fontSize: 30, fontWeight: 700, color: "white"}}>Auttaja: The First AI Helper for Music Composition</h1>
+      <div className="flex flex-row gap-4">
+        <button className="bg-white text-black text-2xl font-bold border-black border-2 rounded-lg px-5 py-3" onClick={goToEditor}>Start</button>
+        {/* <button className="bg-white text-black font-bold border-black border-2 rounded-lg px-5 py-2" onClick={handleNewScore}>New Score</button> */}
+        {/* <div className="bg-white text-black font-bold border-black border-2 rounded-lg px-5 py-2" >
+          <input type="file" accept=".musicxml" onChange={handleFileUpload} />
+          {fileName && (
+            <>
+              <p>Selected File: {fileName}</p>
+              <button onClick={goToEditor}>Open Editor</button>
+            </>
+          )}
+        </div>  */}
+      </div>
     <div style={{ display: "none" }}>
     <Card className="p-6 space-y-6">
       <h2 className="text-xl font-semibold">Advanced Search Condition Builder</h2>
