@@ -3,28 +3,48 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tonejs/midi": "^2.0.28",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.126",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "body-parser": "^2.2.0",
+    "buffer": "^6.0.3",
+    "class-variance-authority": "^0.7.1",
+    "cors": "^2.8.5",
+    "crypto-browserify": "^3.12.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "file-saver": "^2.0.5",
+    "lucide-react": "^0.546.0",
+    "next": "^15.5.4",
+    "node-fetch": "^3.3.2",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
+    "stream-browserify": "^3.0.0",
+    "tone": "^15.1.22",
     "typescript": "^4.9.5",
     "verovio": "^5.6.0",
     "vexflow": "^5.0.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "xml2js": "^0.6.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "backend": "cross-env PORT=5000 node server.js",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "eject": "react-scripts eject",
+    "tailwind:init": "tailwindcss init -p"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +65,16 @@
     ]
   },
   "devDependencies": {
-    "@types/verovio": "^5.1.0"
+    "@types/file-saver": "^2.0.7",
+    "@types/next": "^8.0.7",
+    "@types/react": "^18.3.24",
+    "@types/react-dom": "^18.3.7",
+    "@types/verovio": "^5.1.0",
+    "@types/xml2js": "^0.4.14",
+    "autoprefixer": "^10.4.21",
+    "cross-env": "^10.1.0",
+    "postcss": "^8.5.6",
+    "react-app-rewired": "^2.2.1",
+    "tailwindcss": "^3.4.13"
   }
 }

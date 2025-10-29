@@ -1,12 +1,5 @@
 /*declare module "verovio" {
-  const Verovio: any;
-  export default Verovio;
-}
-
-
-// Verovio v5.6.0 TypeScript declaration
-declare module "verovio" {
-  export class toolkit {
+  export default class VerovioToolkit {
     constructor();
     setOptions(options: Record<string, any>): void;
     loadData(xml: string, options?: Record<string, any>): void;
@@ -14,7 +7,7 @@ declare module "verovio" {
   }
 }*/
 
-// Verovio v5.6.0 minimal TypeScript declaration
+
 declare module "verovio" {
   export class toolkit {
     constructor();
@@ -22,10 +15,7 @@ declare module "verovio" {
     loadData(xml: string, options?: Record<string, any>): void;
     renderToSVG(page: number, options?: Record<string, any>): string;
   }
-
-  const verovio: {
-    toolkit: typeof toolkit;
-  };
-  export default verovio;
 }
+
+
 
