@@ -30,7 +30,7 @@ export default function ChatBotComponent({ xml, setXml, xmlOption1, setXmlOption
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [tempText, setTempText] = useState("");
 
-  const regions = ["Highlighted sections", "Syllables x-y", "All"];
+  const regions = ["Highlighted sections", "Measures x-y", "All"];
   const categories = ["Melody", "Rhythm", "Harmony", "Style"];
 
   const melodyExamples = [
