@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// UI 组件
+
 import Card from "../components/ui/Card";
 import Input from "../components/ui/Input";
 import {Button} from "../components/ui/Button";
@@ -29,13 +29,11 @@ export default function HomePage() {
     const file = e.target.files?.[0];
     if (file) {
       setFileName(file.name);
-      // TODO: 上传文件到后端或读取内容
     }
   };
 
   const handleNewScore = () => {
     setFileName("NewScore.musicxml");
-    // TODO: 创建空白 MusicXML
   };
 
   const goToEditor = () => {
